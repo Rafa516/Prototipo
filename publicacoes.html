@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Educação Conectada</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400i" rel="stylesheet">
+        
+	</head>
+	<body>
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand portex-alunex" href="index.html">Educação Conectada</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active cadastro">
+                        <a href="painel.html">Perfil do Aluno</a></a>
+                    </li>
+                    <li>
+                        <a href="#">Registros</a>
+                    </li>
+                    <li>
+                        <a href="#">Configurações</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Sair</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8">  
+               <a href="publicacoes.html" class="btn btn-success btn-lg" type="button">
+                    <span class="badge"><span class="glyphicon glyphicon-picture"></span> Publicações</span> 
+                </a>
+
+                <a href="chat.html" class="btn btn-success btn-lg" type="button">
+                    <span class="badge"><span class="   glyphicon glyphicon-user"></span><span class="  glyphicon glyphicon-user"></span> Chat
+                </a>
+
+                <a href="amigos.html" class="btn btn-success btn-lg" type="button">
+                    <span class="badge"><span class="glyphicon glyphicon-user"></span> Amigos</span>
+                </a>
+            </div>
+
+             <div id="hour" class="col-md-4 text-right">
+            </div>
+        </div>
+
+        <div class="well well-sm">
+            <div class="container">
+                
+                <div class="col-md-11">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3><span class="glyphicon glyphicon-picture"></span> Últimas Publicações</h3>
+                      <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                     
+                    </div>                
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item"></a>
+                            <a href="#" class="list-group-item"></a>
+                            <a href="#" class="list-group-item"></a>
+                            <a href="#" class="list-group-item"></a>
+                            <a href="#" class="list-group-item"></a>
+                            <a href="#" class="list-group-item"></a>
+                            <a href="#" class="list-group-item"></a>
+                        </div>
+
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+            var data = new Date();
+            var dataSolicitacao = new Date();
+            var dia = data.getDate();
+            var diaExtenso =  ["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"];
+            var mes = data.getMonth() + 1; // Janeiro é 0
+            var ano = data.getFullYear();
+
+            // Adiciona prefixo 0
+
+            if (dia < 10) {
+                dia = '0' + dia 
+            } 
+
+            if (mes < 10) {
+                mes = '0'+ mes
+            }
+
+            data = '<h4><span class="glyphicon glyphicon-calendar"></span> ' + dia + '/' + mes + '/' + ano + ' | ' + diaExtenso[data.getDay()] + '</h4>';
+            document.getElementById("hour").innerHTML = data;
+        </script>
+	</body>
+</html>
