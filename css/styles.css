@@ -1,0 +1,103 @@
+nav {
+	padding: 20px 0;
+	min-height: 100px;
+	border-radius: 0 !important;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+	background-color:#04B45F;
+	border-radius: 4px;
+}
+
+.portex-alunex {
+	font-family: 'Raleway', sans-serif;
+	font-size: 28pt;
+	font-weight: bold;
+	color: #fff !important;
+}
+
+.portex-alunex-footer {
+	font-family: 'Raleway', sans-serif;
+	font-size: inherit;
+	font-weight: bold;
+	color: inherit;
+}
+
+.bg-intro {
+	width: 80%;
+	height: auto;
+	background: url('../img/conecta.png') no-repeat;
+	background-position: center;
+	
+	
+}
+
+.bg-cadastro {
+	width: 70%;
+	height: auto;
+	background: url('../img/conecta.png') no-repeat;
+	background-position: center;
+	background-size:;
+}
+
+.login {
+	height: 480px;
+}
+
+#form-login {
+	margin-top: 20px;
+}
+
+.row {
+	margin-bottom: 20px;
+}
+
+.table {
+	background-color: #fff;
+}
+
+.table thead {
+	background-color: grey;
+	color: #fff;
+}
+
+.btn-lg {
+ 	margin-bottom: 5px;
+ 	background-color: #6633ff;
+}
+
+.btn-notificacoes, .btn-notificacoes:hover, .btn-notificacoes:focus {
+	background-color: #6666ff;
+	border-color: #6633ff;
+}
+
+.calendario tr td:first-child {width: 70%;}
+
+.list-group, .pagination {margin: 0;}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 65px;
+}
+.footer {
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 65px;
+	background-color: #04B45F;
+}
+
+.text-center p{
+color: white;
+}
+
